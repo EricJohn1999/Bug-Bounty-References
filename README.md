@@ -67,6 +67,8 @@ Example: nmap -sP 192.168.100.0/24
 * [NMAP Cheat Sheet No. 1](https://www.stationx.net/nmap-cheat-sheet/)</br>
 
 # Setting Laboratory References
+</br>**6. HOW TO - Exit mouse and keyboard on VMware Player 10**</br>
+press Ctrl + Alt
 
 </br>**5. HOW TO - Chrome Install on Kali Linux**</br>
 ``` 
@@ -91,7 +93,6 @@ dpkg --list | grep google
 </br>**2. Kali Operating System - default login credentials**</br>
 Username: **kali** </br>
 Password: **kali**
-
 
 </br>**1. Installation of Virtual Machine** </br>
 Download links:
