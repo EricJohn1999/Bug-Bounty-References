@@ -1,4 +1,40 @@
 # NMAP Cheat Sheet
+
+* NMAP brute forces DNS hostnames guessing subdomains</br>
+```
+nmap -Pn --script=dns-brute <DOMAIN_NAME>
+
+Example: nmap -Pn --script=dns-brute domain.com
+```
+
+* NMAP whois query</br>
+```
+nmap --script whois* <DOMAIN_NAME> 
+
+Example: nmap --script whois* domain.com
+```
+
+* NMAP detect cross site scripting CSS vulnerabilities</br>
+```
+nmap -p80 --script http-unsafe-output-escaping <DOMAIN_NAME>
+
+Example: nmap -p80 --script http-unsafe-output-escaping domain.com 
+```
+
+* NMAP detect cross site scripting CSS vulnerabilities</br>
+```
+nmap -p80 --script http-unsafe-output-escaping <DOMAIN_NAME>
+
+Example: nmap -p80 --script http-unsafe-output-escaping domain.com 
+```
+
+* NMAP check for SQL injections</br>
+```
+nmap -p80 --script http-sql-injection <DOMAIN_NAME> 
+
+Example: nmap -p80 --script http-sql-injection google.com
+```
+
 * NMAP scan for vulnability</br>
 ```
 sudo nmap --script vuln <TARGET_IP> 
