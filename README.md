@@ -63,6 +63,9 @@ nmap -sP <IP_ADDRESS>/24
 Example: nmap -sP 192.168.100.0/24 
 ```
 
+</br>References:
+* [NMAP Cheat Sheet No. 1](https://www.stationx.net/nmap-cheat-sheet/)</br>
+
 # Setting Laboratory References
 
 </br>**5. HOW TO - Chrome Install on Kali Linux**</br>
