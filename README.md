@@ -67,10 +67,10 @@ Example: nmap -sP 192.168.100.0/24
 * [NMAP Cheat Sheet No. 1](https://www.stationx.net/nmap-cheat-sheet/)</br>
 
 # Setting Laboratory References
-</br>**6. HOW TO - Exit mouse and keyboard on VMware Player 10**</br>
+</br>**6. How to - Exit mouse and keyboard on VMware Player 10**</br>
 press Ctrl + Alt
 
-</br>**5. HOW TO - Chrome Install on Kali Linux**</br>
+</br>**5. How to - Chrome Install on Kali Linux**</br>
 ``` 
 apt update
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -78,7 +78,7 @@ apt install ./google-chrome-stable_current_amd64.deb
 google-chrome --no-sandbox 
  ```
 
-</br>**4. HOW TO - Chrome Uninstall on Kali Linux**</br>
+</br>**4. How to - Chrome Uninstall on Kali Linux**</br>
 ``` 
 dpkg --list | grep google
 sudo apt --purge remove google-chrome-stable
@@ -86,7 +86,7 @@ dpkg --list | grep google
 ```
 
 
-</br>**3. HOW TO - Linux (Kali and Ubuntu) update and upgrade**</br>
+</br>**3. How to - Linux (Kali and Ubuntu) update and upgrade**</br>
 ``` sudo apt update && sudo apt upgrade ```
 
 
