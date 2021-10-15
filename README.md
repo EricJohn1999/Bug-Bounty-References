@@ -1,5 +1,13 @@
 # Linux (Kali/Ubuntu) Command Cheat Sheet
-* 
+* How to share folder between Kali Linux and Windows 10 Pro 64bit
+Kali Linux Environment
+1. Open the folder to share with Windows 10 Pro
+2. Right click and open the terminal
+3. Type the command below
+```
+mount.cifs //eric-dell/KaliShare /root/Desktop/a -o user=kali
+```
+Notes: Make sure 'KaliShare' folder in windows 10 Pro environment is accessible to the network.
 
 * How to print the current directory
 ```
