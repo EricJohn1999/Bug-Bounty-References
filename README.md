@@ -1,3 +1,32 @@
+# NMAP Cheat Sheet
+* NMAP scan for vulnability</br>
+```
+sudo nmap --script vuln <TARGET_IP> 
+
+Example: sudo nmap --script vuln 192.168.100.1
+```
+
+* NMAP use as decoy</br>
+``` 
+sudo nmap -sS -D <DECOY IP_ADDRESS> <TARGET_IP> 
+
+Example: sudo nmap -sS -D 172.168.100.1 192.168.100.1 
+```
+
+* NMAP use stealthy to scan network with live IP address with open port
+``` 
+sudo nmap -sS -p <PORT 1>,<PORT 2> <TARGET_IP/24> 
+
+Example: sudo nmap -sS -p 80, 443 192.168.100.0/24> 
+```
+
+* NMAP scan live IP address on the network
+``` 
+nmap -sP <IP_ADDRESS>/24 
+
+Example: nmap -sP 192.168.100.0/24 
+```
+
 # Setting Laboratory References
 
 </br>**5. HOW TO - Chrome Install on Kali Linux**</br>
