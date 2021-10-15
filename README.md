@@ -32,7 +32,7 @@ Example: nmap -p80 --script http-unsafe-output-escaping domain.com
 ```
 nmap -p80 --script http-sql-injection <DOMAIN_NAME> 
 
-Example: nmap -p80 --script http-sql-injection google.com
+Example: nmap -p80 --script http-sql-injection domain.com
 ```
 
 * NMAP scan for vulnability</br>
