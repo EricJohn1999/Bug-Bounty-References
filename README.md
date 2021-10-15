@@ -1,3 +1,21 @@
+# Linux (Kali/Ubuntu) Command Cheat Sheet
+* 
+
+* How to print the current directory
+```
+pwd
+```
+
+* How to display all the users and their path
+```
+cat /etc/passw
+```
+
+* How to list down all directories in the current directory
+```
+ls
+```
+
 # Metasploit Cheat Sheet
 * Metasploitable login credentials</br>
 ```
