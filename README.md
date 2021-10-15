@@ -10,9 +10,38 @@ unzip filename.zip
 java -version
 ```
 
-* How to show Linux version
+* How install Apache2 in Ubuntu Linux
+```
+sudo apt update
+sudo apt install apache2
+```
+
+* How start Apache2 in Ubuntu Linux
+```
+sudo /etc/init.d/apache2 start 
+```
+
+* How stop Apache2 in Ubuntu Linux
+``` 
+sudo /etc/init.d/apache2 stop 
+```
+
+* How to show Ubuntu Linux version
+```
+lsb_release -a
+```
+
+* How to show Kali Linux version
 ```
 cat /etc/*release*
+```
+
+* How to create folder shortcut in Ubuntu Linux
+1. Open the folder to make a shortcut
+2. Right click and open the terminal
+3. Type the command below
+```
+ln -s $PWD ~/Desktop/
 ```
 
 * How to share folder between Ubuntu Linux and Windows 10 Pro 64bit
