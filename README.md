@@ -1,3 +1,10 @@
+# Metasploit Cheat Sheet
+* Metasploitable login credentials</br>
+```
+Username: msfadmin
+Password: msfadmin
+```
+
 # NMAP Cheat Sheet
 
 * NMAP brute forces DNS hostnames guessing subdomains</br>
@@ -91,8 +98,10 @@ dpkg --list | grep google
 
 
 </br>**2. Kali Operating System - default login credentials**</br>
-Username: **kali** </br>
-Password: **kali**
+```
+Username: kali
+Password: kali
+```
 
 </br>**1. Installation of Virtual Machine** </br>
 Download links:
