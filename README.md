@@ -1,13 +1,19 @@
-# Bug Bounty References
+# Setting Laboratory References
 
-
-</br>**4. HOW TO - Install Chrome on Kali Linux**</br>
+</br>**5. HOW TO - Chrome Install on Kali Linux**</br>
 ``` 
 apt update
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 apt install ./google-chrome-stable_current_amd64.deb
 google-chrome --no-sandbox 
  ```
+
+</br>**4. HOW TO - Chrome Uninstall on Kali Linux**</br>
+``` 
+dpkg --list | grep google
+sudo apt --purge remove google-chrome-stable
+dpkg --list | grep google
+```
 
 
 </br>**3. HOW TO - Linux (Kali and Ubuntu) update and upgrade**</br>
