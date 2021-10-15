@@ -1,13 +1,52 @@
 # Linux (Kali/Ubuntu) Command Cheat Sheet
+
+* How to unzip file in Ubuntu Linux
+```
+unzip filename.zip
+```
+
+* How to show Java version in Linux
+```
+java -version
+```
+
+* How to show Linux version
+```
+cat /etc/*release*
+```
+
+* How to share folder between Ubuntu Linux and Windows 10 Pro 64bit
+</br></br>
+Ubuntu Linux Environment
+1. Open the folder to share with Windows 10 Pro
+2. Right click and open the terminal
+3. Type the command below
+```
+sudo mount -t cifs -o username=test //192.168.100.71/a$ /home/test/Desktop/SharedFolder
+
+Where:
+192.168.100.71 - is the IP address of Windows 10 Pro
+a$             - shared folder from Windows 10 Pro, 
+SharedFolder   - shared folder from Linux
+
+Note: Make sure 'KaliShare' folder in windows 10 Pro environment is accessible to the network.
+```
+
 * How to share folder between Kali Linux and Windows 10 Pro 64bit
+</br></br>
 Kali Linux Environment
 1. Open the folder to share with Windows 10 Pro
 2. Right click and open the terminal
 3. Type the command below
 ```
 mount.cifs //eric-dell/KaliShare /root/Desktop/a -o user=kali
+
+Where:
+KaliShare - shared folder from Windows 10 Pro
+a         - shared folder from Linux
+
+Note: Make sure 'KaliShare' folder in windows 10 Pro environment is accessible to the network.
 ```
-Notes: Make sure 'KaliShare' folder in windows 10 Pro environment is accessible to the network.
 
 * How to print the current directory
 ```
