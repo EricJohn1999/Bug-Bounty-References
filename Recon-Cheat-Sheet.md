@@ -21,13 +21,6 @@ nmap -p80 --script http-unsafe-output-escaping <DOMAIN_NAME>
 Example: nmap -p80 --script http-unsafe-output-escaping domain.com 
 ```
 
-* NMAP detect cross site scripting CSS vulnerabilities</br>
-```
-nmap -p80 --script http-unsafe-output-escaping <DOMAIN_NAME>
-
-Example: nmap -p80 --script http-unsafe-output-escaping domain.com 
-```
-
 * NMAP check for SQL injections</br>
 ```
 nmap -p80 --script http-sql-injection <DOMAIN_NAME> 
