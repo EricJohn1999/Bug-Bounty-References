@@ -98,6 +98,7 @@ ls
 Username: msfadmin
 Password: msfadmin
 ```
+# Setting Laboratory References
 
 </br>**How to - set keyboard shorcut to display all running process in Ubuntu**</br>
 1. Go to 'Setiings'
@@ -110,7 +111,6 @@ Password: msfadmin
 gnome-system-monitor
 ```
 
-# Setting Laboratory References
 </br>**How to - Exit mouse and keyboard on VMware Player 10**</br>
 Press <kbd> Ctrl </kbd> + <kbd> Alt </kbd>
 
