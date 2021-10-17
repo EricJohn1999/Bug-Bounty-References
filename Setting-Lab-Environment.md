@@ -100,6 +100,25 @@ Password: msfadmin
 ```
 # Cheat Sheet - Setting Laboratory References
 
+</br>**How to expand/increase Ubuntu VM hard disk on VMware Player 6** 
+1. Shutdown Ubuntu OS on the VMware.
+2. On VMware Player 6, go to "Edir virtual machine settings".
+3. Select 'Hard Disk', click 'Expand' button an enter the desired size.
+4. Run the Ubuntu OS again.
+5. On the Ubuntu desktop, click 'Show Applications' and select 'System Monitor', for checkin
+6. Open the terminal and type
+```
+sudo -s
+```
+7. Enter the appropriate password
+8. Install 'gparted' by typing the following command
+```
+apt-get install gparted
+```
+9. Go to 'Show Applications' and select 'gparted'
+10. Do the necessary adjustment
+
+
 </br>**How to - set keyboard shorcut to display all running process in Ubuntu**</br>
 1. Go to 'Setiings'
 2. Select 'Keyboad Shorcut'
@@ -129,14 +148,13 @@ sudo apt --purge remove google-chrome-stable
 dpkg --list | grep google
 ```
 
-
-</br>**How to - Linux (Kali and Ubuntu) update and upgrade**</br>
+</br>**How to - Linux (Kali and Ubuntu) update and upgrade**
 ``` 
 sudo apt update && sudo apt upgrade 
 ```
 
+</br>**How to - Kali Operating System - default login credentials**
 
-</br>**How to - Kali Operating System - default login credentials**</br>
 ```
 Username: kali
 Password: kali
