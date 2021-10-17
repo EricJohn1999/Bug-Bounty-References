@@ -99,7 +99,6 @@ Username: msfadmin
 Password: msfadmin
 ```
 
-# Setting Laboratory References
 </br>**How to - set keyboard shorcut to display all running process in Ubuntu**</br>
 1. Go to 'Setiings'
 2. Select 'Keyboad Shorcut'
