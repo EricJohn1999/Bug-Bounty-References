@@ -1,60 +1,168 @@
-# NMAP Cheat Sheet 
+# Cheat Sheet - Linux (Kali/Ubuntu) Command 
 
-**NMAP brute forces DNS hostnames guessing subdomains</br>**
+</br>:pushpin: **How to unzip file in Ubuntu Linux**</span>
 ```
-nmap -Pn --script=dns-brute <DOMAIN_NAME>
-
-Example: nmap -Pn --script=dns-brute domain.com
+unzip filename.zip
 ```
 
-</br>**NMAP whois query</br>**
+</br>:pushpin: **How to show Java version in Linux**
 ```
-nmap --script whois* <DOMAIN_NAME> 
-
-Example: nmap --script whois* domain.com
+java -version
 ```
 
-</br>**NMAP detect cross site scripting CSS vulnerabilities**
+</br>:pushpin: **How install Apache2 in Ubuntu Linux**
 ```
-nmap -p80 --script http-unsafe-output-escaping <DOMAIN_NAME>
-
-Example: nmap -p80 --script http-unsafe-output-escaping domain.com 
-```
-
-</br>**NMAP check for SQL injections**
-```
-nmap -p80 --script http-sql-injection <DOMAIN_NAME> 
-
-Example: nmap -p80 --script http-sql-injection domain.com
+sudo apt update
+sudo apt install apache2
 ```
 
-</br>**NMAP scan for vulnability**
+</br>:pushpin: **How start Apache2 in Ubuntu Linux**
 ```
-sudo nmap --script vuln <TARGET_IP> 
-
-Example: sudo nmap --script vuln 192.168.100.1
+sudo /etc/init.d/apache2 start 
 ```
 
-</br>**NMAP use as decoy**
+</br>:pushpin: **How stop Apache2 in Ubuntu Linux**
 ``` 
-sudo nmap -sS -D <DECOY IP_ADDRESS> <TARGET_IP> 
-
-Example: sudo nmap -sS -D 172.168.100.1 192.168.100.1 
+sudo /etc/init.d/apache2 stop 
 ```
 
-</br>**NMAP use stealthy to scan network with live IP address with open port**
+</br>:pushpin: **How to show Ubuntu Linux version**
+```
+lsb_release -a
+```
+
+</br>:pushpin: **How to show Kali Linux version**
+```
+cat /etc/*release*
+```
+
+</br>:pushpin: **How to create folder shortcut in Ubuntu Linux**
+1. Open the folder to make a shortcut
+2. Right click and open the terminal
+3. Type the command below
+```
+ln -s $PWD ~/Desktop/
+```
+
+</br>:pushpin: **How to share folder between Ubuntu Linux and Windows 10 Pro 64bit**
+</br></br>
+Ubuntu Linux Environment
+1. Open the folder to share with Windows 10 Pro
+2. Right click and open the terminal
+3. Type the command below
+```
+sudo mount -t cifs -o username=test //192.168.100.71/a$ /home/test/Desktop/SharedFolder
+
+Where:
+192.168.100.71 - is the IP address of Windows 10 Pro
+a$             - shared folder from Windows 10 Pro, 
+SharedFolder   - shared folder from Linux
+
+Note: Make sure 'KaliShare' folder in windows 10 Pro environment is accessible to the network.
+```
+
+</br>:pushpin: **How to share folder between Kali Linux and Windows 10 Pro 64bit**
+</br></br>
+Kali Linux Environment
+1. Open the folder to share with Windows 10 Pro
+2. Right click and open the terminal
+3. Type the command below
+```
+mount.cifs //eric-dell/KaliShare /root/Desktop/a -o user=kali
+
+Where:
+KaliShare - shared folder from Windows 10 Pro
+a         - shared folder from Linux
+
+Note: Make sure 'KaliShare' folder in windows 10 Pro environment is accessible to the network.
+```
+
+</br>:pushpin: **How to print the current directory**
+```
+pwd
+```
+
+</br>:pushpin: **How to display all the users and their path**
+```
+cat /etc/passw
+```
+
+</br>:pushpin: **How to list down all directories in the current directory**
+```
+ls
+```
+
+# Cheat Sheet - Metasploit Cheat Sheet
+</br>:pushpin: **Metasploitable login credentials**</br>
+```
+Username: msfadmin
+Password: msfadmin
+```
+# Cheat Sheet - Setting Laboratory References
+
+</br>:pushpin: **How to expand/increase Ubuntu VM hard disk on VMware Player 6** 
+1. Shutdown Ubuntu OS on the VMware.
+2. On VMware Player 6, go to "Edir virtual machine settings".
+3. Select 'Hard Disk', click 'Expand' button an enter the desired size.
+4. Run the Ubuntu OS again.
+5. On the Ubuntu desktop, click 'Show Applications' and select 'System Monitor', for checkin
+6. Open the terminal and type
+```
+sudo -s
+```
+7. Enter the appropriate password
+8. Install 'gparted' by typing the following command
+```
+apt-get install gparted
+```
+9. Go to 'Show Applications' and select 'gparted'
+10. Do the necessary adjustment
+
+
+</br>:pushpin: **How to set keyboard shorcut to display all running process in Ubuntu**</br>
+1. Go to 'Setiings'
+2. Select 'Keyboad Shorcut'
+3. Scroll down to 'Custom Shortcut'
+4. Click the '+'
+5. Enter the preferred 'Name' and keyboard shortcut
+6. On the 'Command' type
+```
+gnome-system-monitor
+```
+
+</br>:pushpin: **How to exit mouse and keyboard on VMware Player 10**</br>
+Press <kbd> Ctrl </kbd> + <kbd> Alt </kbd>
+
+</br>:pushpin: **How to Chrome Install on Kali Linux**</br>
 ``` 
-sudo nmap -sS -p <PORT 1>,<PORT 2> <TARGET_IP/24> 
+apt update
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+apt install ./google-chrome-stable_current_amd64.deb
+google-chrome --no-sandbox 
+ ```
 
-Example: sudo nmap -sS -p 80, 443 192.168.100.0/24> 
-```
-
-</br>**NMAP scan live IP address on the network**
+</br>:pushpin: **How to - Chrome Uninstall on Kali Linux**</br>
 ``` 
-nmap -sP <IP_ADDRESS>/24 
-
-Example: nmap -sP 192.168.100.0/24 
+dpkg --list | grep google
+sudo apt --purge remove google-chrome-stable
+dpkg --list | grep google
 ```
 
-</br>References:
-* [NMAP Cheat Sheet No. 1](https://www.stationx.net/nmap-cheat-sheet/)</br>
+</br>:pushpin: **How to Linux (Kali and Ubuntu) update and upgrade**
+``` 
+sudo apt update && sudo apt upgrade 
+```
+
+</br>:pushpin: **How to Kali Operating System - default login credentials**
+
+```
+Username: kali
+Password: kali
+```
+
+</br>:pushpin: **How to Installation of Virtual Machine** </br>
+Download links:
+* [Kali Linux - Operating System (Option 1)](https://www.kali.org/get-kali/#kali-virtual-machines)</br>
+* [Ubuntu - Operating System (Option 2)](https://ubuntu.com/download/desktop)</br>
+* [VMware Player - Virtual Machine (Option 1)](https://www.vmware.com/asean/products/workstation-player/workstation-player-evaluation.html)</br>
+* [Virtual Box - Virtual Machine (Option 2)](https://www.virtualbox.org/wiki/Downloads)</br>
