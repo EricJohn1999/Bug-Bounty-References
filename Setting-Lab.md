@@ -112,7 +112,7 @@ gnome-system-monitor
 
 # Setting Laboratory References
 </br>**How to - Exit mouse and keyboard on VMware Player 10**</br>
-press Ctrl + Alt
+press <kbd> Ctrl </kbd> + <kbd> Alt </kbd>
 
 </br>**How to - Chrome Install on Kali Linux**</br>
 ``` 
