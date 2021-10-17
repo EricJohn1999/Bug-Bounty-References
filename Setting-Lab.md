@@ -1,42 +1,42 @@
 # Linux (Kali/Ubuntu) Command Cheat Sheet
 
-* How to unzip file in Ubuntu Linux
+</br>**How to unzip file in Ubuntu Linux**
 ```
 unzip filename.zip
 ```
 
-* How to show Java version in Linux
+</br>**How to show Java version in Linux**
 ```
 java -version
 ```
 
-* How install Apache2 in Ubuntu Linux
+</br>**How install Apache2 in Ubuntu Linux**
 ```
 sudo apt update
 sudo apt install apache2
 ```
 
-* How start Apache2 in Ubuntu Linux
+</br>**How start Apache2 in Ubuntu Linux**
 ```
 sudo /etc/init.d/apache2 start 
 ```
 
-* How stop Apache2 in Ubuntu Linux
+</br>**How stop Apache2 in Ubuntu Linux**
 ``` 
 sudo /etc/init.d/apache2 stop 
 ```
 
-* How to show Ubuntu Linux version
+</br>**How to show Ubuntu Linux version**
 ```
 lsb_release -a
 ```
 
-* How to show Kali Linux version
+</br>**How to show Kali Linux version**
 ```
 cat /etc/*release*
 ```
 
-* How to create folder shortcut in Ubuntu Linux
+</br>**How to create folder shortcut in Ubuntu Linux**
 1. Open the folder to make a shortcut
 2. Right click and open the terminal
 3. Type the command below
@@ -44,7 +44,7 @@ cat /etc/*release*
 ln -s $PWD ~/Desktop/
 ```
 
-* How to share folder between Ubuntu Linux and Windows 10 Pro 64bit
+</br>**How to share folder between Ubuntu Linux and Windows 10 Pro 64bit**
 </br></br>
 Ubuntu Linux Environment
 1. Open the folder to share with Windows 10 Pro
@@ -61,7 +61,7 @@ SharedFolder   - shared folder from Linux
 Note: Make sure 'KaliShare' folder in windows 10 Pro environment is accessible to the network.
 ```
 
-* How to share folder between Kali Linux and Windows 10 Pro 64bit
+</br>**How to share folder between Kali Linux and Windows 10 Pro 64bit**
 </br></br>
 Kali Linux Environment
 1. Open the folder to share with Windows 10 Pro
@@ -77,17 +77,17 @@ a         - shared folder from Linux
 Note: Make sure 'KaliShare' folder in windows 10 Pro environment is accessible to the network.
 ```
 
-* How to print the current directory
+</br>**How to print the current directory**
 ```
 pwd
 ```
 
-* How to display all the users and their path
+</br>**How to display all the users and their path**
 ```
 cat /etc/passw
 ```
 
-* How to list down all directories in the current directory
+</br>**How to list down all directories in the current directory**
 ```
 ls
 ```
@@ -112,7 +112,7 @@ gnome-system-monitor
 
 # Setting Laboratory References
 </br>**How to - Exit mouse and keyboard on VMware Player 10**</br>
-press <kbd> Ctrl </kbd> + <kbd> Alt </kbd>
+Press <kbd> Ctrl </kbd> + <kbd> Alt </kbd>
 
 </br>**How to - Chrome Install on Kali Linux**</br>
 ``` 
