@@ -1,4 +1,4 @@
-# Linux (Kali/Ubuntu) Command Cheat Sheet
+# Cheat Sheet - Linux (Kali/Ubuntu) Command 
 
 </br>**How to unzip file in Ubuntu Linux**
 ```
@@ -92,13 +92,13 @@ cat /etc/passw
 ls
 ```
 
-# Metasploit Cheat Sheet
+# Cheat Sheet - Metasploit Cheat Sheet
 * Metasploitable login credentials</br>
 ```
 Username: msfadmin
 Password: msfadmin
 ```
-# Setting Laboratory References
+# Cheat Sheet - Setting Laboratory References
 
 </br>**How to - set keyboard shorcut to display all running process in Ubuntu**</br>
 1. Go to 'Setiings'
@@ -131,7 +131,9 @@ dpkg --list | grep google
 
 
 </br>**How to - Linux (Kali and Ubuntu) update and upgrade**</br>
-``` sudo apt update && sudo apt upgrade ```
+``` 
+sudo apt update && sudo apt upgrade 
+```
 
 
 </br>**How to - Kali Operating System - default login credentials**</br>
@@ -140,7 +142,7 @@ Username: kali
 Password: kali
 ```
 
-</br>**How to - Installation of Virtual Machine** </br>
+</br> **How to Installation of Virtual Machine** </br>
 Download links:
 * [Kali Linux - Operating System (Option 1)](https://www.kali.org/get-kali/#kali-virtual-machines)</br>
 * [Ubuntu - Operating System (Option 2)](https://ubuntu.com/download/desktop)</br>
