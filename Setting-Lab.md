@@ -99,13 +99,23 @@ Username: msfadmin
 Password: msfadmin
 ```
 
-
+# Setting Laboratory References
+</br>**How to - set keyboard shorcut to display all running process in Ubuntu**</br>
+1. Go to 'Setiings'
+2. Select 'Keyboad Shorcut'
+3. Scroll down to 'Custom Shortcut'
+4. Click the '+'
+5. Enter the preferred 'Name' and keyboard shortcut
+6. On the 'Command' type
+```
+gnome-system-monitor
+```
 
 # Setting Laboratory References
-</br>**6. How to - Exit mouse and keyboard on VMware Player 10**</br>
+</br>**How to - Exit mouse and keyboard on VMware Player 10**</br>
 press Ctrl + Alt
 
-</br>**5. How to - Chrome Install on Kali Linux**</br>
+</br>**How to - Chrome Install on Kali Linux**</br>
 ``` 
 apt update
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -113,7 +123,7 @@ apt install ./google-chrome-stable_current_amd64.deb
 google-chrome --no-sandbox 
  ```
 
-</br>**4. How to - Chrome Uninstall on Kali Linux**</br>
+</br>**How to - Chrome Uninstall on Kali Linux**</br>
 ``` 
 dpkg --list | grep google
 sudo apt --purge remove google-chrome-stable
@@ -121,17 +131,17 @@ dpkg --list | grep google
 ```
 
 
-</br>**3. How to - Linux (Kali and Ubuntu) update and upgrade**</br>
+</br>**How to - Linux (Kali and Ubuntu) update and upgrade**</br>
 ``` sudo apt update && sudo apt upgrade ```
 
 
-</br>**2. Kali Operating System - default login credentials**</br>
+</br>**How to - Kali Operating System - default login credentials**</br>
 ```
 Username: kali
 Password: kali
 ```
 
-</br>**1. Installation of Virtual Machine** </br>
+</br>**How to - Installation of Virtual Machine** </br>
 Download links:
 * [Kali Linux - Operating System (Option 1)](https://www.kali.org/get-kali/#kali-virtual-machines)</br>
 * [Ubuntu - Operating System (Option 2)](https://ubuntu.com/download/desktop)</br>
