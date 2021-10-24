@@ -11,3 +11,6 @@
 2. [Bug Bounty Reports Explained](https://www.youtube.com/c/BugBountyReportsExplained/videos)
 3. [Exploiting Smuggling Attack in Real World](https://www.youtube.com/watch?v=JW2fM_GmidU)
 4. [IDOR in Jora POC By Harish Ken](https://www.youtube.com/watch?v=-9Y0A8WV328)
+
+# Bug Bounty Write Up Compilation 
+1. [awesomeopensource.com](https://awesomeopensource.com/project/devanshbatham/Awesome-Bugbounty-Writeups#sql-injectionsqli)
