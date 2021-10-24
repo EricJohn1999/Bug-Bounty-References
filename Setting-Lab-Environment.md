@@ -1,5 +1,5 @@
 # Others 
-1. [Installing Burp's CA certificate in Firefox](https://portswigger.net/burp/documentation/desktop/external-browser-config/certificate/ca-cert-firefox)
+1. [Foxy Proxy issue on Firefox with Burp Suite](https://portswigger.net/burp/documentation/desktop/external-browser-config/certificate/ca-cert-firefox)
 2. Running Burp Suite for the first time command 
 ```
 java -jar burploader.jar
