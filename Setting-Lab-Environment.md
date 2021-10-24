@@ -1,3 +1,15 @@
+# Others 
+1. [Installing Burp's CA certificate in Firefox](https://portswigger.net/burp/documentation/desktop/external-browser-config/certificate/ca-cert-firefox)
+2. Running Burp Suite for the first time command 
+```
+java -jar burploader.jar
+sudo apt-get install openjdk-11-jdk
+```
+3. To lunch Burp Suite Professional
+```
+/usr/lib/jvm/java-11-openjdk-amd64/bin/java --illegal-access=permit -Dfile.encoding=utf-8 -javaagent:burploader.jar -noverify -jar burpsuite_pro_v2021.8.jar
+```
+
 # Cheat Sheet - Linux (Kali/Ubuntu) Command 
 
 </br>**How to unzip file in Ubuntu Linux**
