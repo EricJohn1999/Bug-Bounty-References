@@ -14,3 +14,6 @@
 
 # Bug Bounty Write Up Compilation 
 1. [awesomeopensource.com](https://awesomeopensource.com/project/devanshbatham/Awesome-Bugbounty-Writeups#sql-injectionsqli)
+2. [pentester.land](https://pentester.land/list-of-bug-bounty-writeups.html#bug-bounty-writeups-published-in-2021)
+
+
