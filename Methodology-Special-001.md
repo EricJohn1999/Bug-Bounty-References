@@ -1,5 +1,10 @@
-# Github Post
+# Bug Bounty Write Up Compilation 
+1. [awesomeopensource.com](https://awesomeopensource.com/project/devanshbatham/Awesome-Bugbounty-Writeups#sql-injectionsqli)
+2. [pentester.land](https://pentester.land/list-of-bug-bounty-writeups.html#bug-bounty-writeups-published-in-2021)
+3. [infosecwriteups.com](https://infosecwriteups.com/archive/2021)
 
+
+# Github Post
 1. [Github access token exposure - Bounty: USD 50,000](https://hackerone.com/reports/1087489)
 2. [Improper Validation at Partners Login - Bounty: USD 2,000](https://hackerone.com/reports/1087489)
 3. [Bypass SQL Injection - Bounty: USD 500](https://hackerone.com/reports/1224660)
@@ -12,8 +17,5 @@
 3. [Exploiting Smuggling Attack in Real World](https://www.youtube.com/watch?v=JW2fM_GmidU)
 4. [IDOR in Jora POC By Harish Ken](https://www.youtube.com/watch?v=-9Y0A8WV328)
 
-# Bug Bounty Write Up Compilation 
-1. [awesomeopensource.com](https://awesomeopensource.com/project/devanshbatham/Awesome-Bugbounty-Writeups#sql-injectionsqli)
-2. [pentester.land](https://pentester.land/list-of-bug-bounty-writeups.html#bug-bounty-writeups-published-in-2021)
 
 
