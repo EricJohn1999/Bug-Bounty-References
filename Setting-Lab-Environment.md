@@ -73,6 +73,17 @@ SharedFolder   - shared folder from Linux
 Note: Make sure 'KaliShare' folder in windows 10 Pro environment is accessible to the network.
 ```
 
+</br>**How to share folder between Ubuntu and Windows 10 Pro 64bit**
+</br></br>
+Ubuntu Linux Environment
+1. Make sure samba server is already installed
+2. Open a folder
+3. Navigate to 'Other Locations'
+4. On the 'Connect Server' type
+```
+smb://<Windows PC IP>/<Windows Shared Folder Name>
+```
+
 </br>**How to share folder between Kali Linux and Windows 10 Pro 64bit**
 </br></br>
 Kali Linux Environment
