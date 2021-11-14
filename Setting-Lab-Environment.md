@@ -12,6 +12,16 @@ sudo apt-get install openjdk-11-jdk
 
 # Cheat Sheet - Linux (Kali/Ubuntu) Command 
 
+</br>**How do I fix "$'\r': command not found" errors running Bash scripts in WSL?**
+1. Install <kbd>dos2unix</kbd>
+```
+sudo apt-get install dos2unix
+```
+then
+```
+dos2unix your_file.sh
+```
+
 </br>**How to unzip file in Ubuntu Linux**
 ```
 unzip filename.zip
