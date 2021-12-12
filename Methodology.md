@@ -27,8 +27,8 @@ http://web.com/?c=red" accesskey=x onclick="alert(ERIC)
 ```
 
 # REDIRECT
-:pushpin: 1. Host Header Injection [https://www.youtube.com/watch?v=EPmcOtIJ7dA](https://www.youtube.com/watch?v=EPmcOtIJ7dA)
-
+:pushpin: 1. Host Header Injection [https://www.youtube.com/watch?v=EPmcOtIJ7dA](https://www.youtube.com/watch?v=EPmcOtIJ7dA) </br>
+:pushpin: 2. Open URL redirection vulnerability [https://www.youtube.com/watch?v=vf6GM0Araxw](https://www.youtube.com/watch?v=vf6GM0Araxw)
 
 
 # EMAIL VALIDATION
