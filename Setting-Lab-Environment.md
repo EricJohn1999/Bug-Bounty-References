@@ -12,6 +12,17 @@ sudo apt-get install openjdk-11-jdk
 
 # Cheat Sheet - Linux (Kali/Ubuntu) Command 
 
+</br>**How to Install GO in Kali Linux**
+1. Download the latest Go installation file [https://go.dev/doc/install](https://go.dev/doc/install)
+2. Open the terminal and enter the following commands:
+```
+tar -C /usr/local -xzf go1.17.5.linux-amd64.tar.gz
+echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.profile
+echo "export GOPATH=~/.go" >> ~/.profile 
+source ~/.profile  
+go version     
+```
+
 </br>**How to one click folder or file in Kali Linux**
 1. Go to <kbd>File Manager Settings</kbd>
 2. Under <kbd>File Manager Preference</kbd>, under <kbd>Behavior</kbd>, select <kbd>Single click to activate items</kbd>
