@@ -12,8 +12,15 @@ sudo apt-get install openjdk-11-jdk
 
 # Cheat Sheet - Linux (Kali/Ubuntu) Command 
 
+</br>**How to one click folder or file in Kali Linux**
+1. Go to <kbd>File Manager Settings</kbd>
+2. Under <kbd>File Manager Preference</kbd>, under <kbd>Behavior</kbd>, select <kbd>Single click to activate items</kbd>
+3. Go to <kbd>Desktop Settings...</kbd>, select <kbd>Icons</kbd> tab
+4. Check <kbd>Single click to activate items</kbd>
+
+
 </br>**How do I fix "$'\r': command not found" errors running Bash scripts in WSL?**
-1. Install <kbd>dos2unix</kbd>
+1. Install <kbd></kbd>
 ```
 sudo apt-get install dos2unix
 ```
