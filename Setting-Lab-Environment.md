@@ -1,4 +1,61 @@
-# Linux Command
+# Reference - Linux Command
+**26. How do I fix "$'\r': command not found" errors running Bash scripts in WSL?**
+
+Install 
+```
+sudo apt-get install dos2unix
+```
+then
+```
+dos2unix your_file.sh
+```
+
+**25.How to show Java version in Linux**
+```
+java -version
+```
+
+**24. How install Apache2 in Ubuntu Linux**
+```
+sudo apt update
+sudo apt install apache2
+```
+
+**23. How start Apache2 in Ubuntu Linux**
+```
+sudo /etc/init.d/apache2 start 
+```
+
+**22. How stop Apache2 in Ubuntu Linux**
+``` 
+sudo /etc/init.d/apache2 stop 
+```
+
+**21. How to show Ubuntu Linux version**
+```
+lsb_release -a
+```
+
+**20. How to show Kali Linux version**
+```
+cat /etc/*release*
+```
+
+**19. How to print the current directory**
+```
+pwd
+```
+
+**18. How to display all the users and their path**
+```
+cat /etc/passw
+```
+
+**17. How to list down all directories in the current directory**
+```
+ls
+```
+
 **16. How to unzip file**
 
  ```
@@ -107,7 +164,7 @@ pip3 install -r requirements.txt
 sort input_file | uniq > output_file
 ```
 
-# Cheat Sheet Others 
+# Reference - Others 
 1. [Foxy Proxy issue on Firefox with Burp Suite](https://portswigger.net/burp/documentation/desktop/external-browser-config/certificate/ca-cert-firefox)
 2. Running Burp Suite for the first time command 
 ```
@@ -119,7 +176,7 @@ sudo apt-get install openjdk-11-jdk
 /usr/lib/jvm/java-11-openjdk-amd64/bin/java --illegal-access=permit -Dfile.encoding=utf-8 -javaagent:burploader.jar -noverify -jar burpsuite_pro_v2021.8.jar
 ```
 
-# Cheat Sheet - Linux (Kali/Ubuntu) Command 
+# Reference - Linux (Kali/Ubuntu) Command 
 
 </br>**How to Install GO in Kali Linux**
 1. Download the latest Go installation file [https://go.dev/doc/install](https://go.dev/doc/install)
@@ -137,56 +194,6 @@ go version
 2. Under <kbd>File Manager Preference</kbd>, under <kbd>Behavior</kbd>, select <kbd>Single click to activate items</kbd>
 3. Go to <kbd>Desktop Settings...</kbd>, select <kbd>Icons</kbd> tab
 4. Check <kbd>Single click to activate items</kbd>
-
-
-</br>**How do I fix "$'\r': command not found" errors running Bash scripts in WSL?**
-1. Install 
-```
-sudo apt-get install dos2unix
-```
-then
-```
-dos2unix your_file.sh
-```
-
-</br>**How to show Java version in Linux**
-```
-java -version
-```
-
-</br>**How install Apache2 in Ubuntu Linux**
-```
-sudo apt update
-sudo apt install apache2
-```
-
-</br>**How start Apache2 in Ubuntu Linux**
-```
-sudo /etc/init.d/apache2 start 
-```
-
-</br>**How stop Apache2 in Ubuntu Linux**
-``` 
-sudo /etc/init.d/apache2 stop 
-```
-
-</br>**How to show Ubuntu Linux version**
-```
-lsb_release -a
-```
-
-</br>**How to show Kali Linux version**
-```
-cat /etc/*release*
-```
-
-</br>**How to create folder shortcut in Ubuntu Linux**
-1. Open the folder to make a shortcut
-2. Right click and open the terminal
-3. Type the command below
-```
-ln -s $PWD ~/Desktop/
-```
 
 </br>**How to share folder between Ubuntu Linux and Windows 10 Pro 64bit**
 </br></br>
@@ -232,22 +239,7 @@ a         - shared folder from Linux
 Note: Make sure 'KaliShare' folder in windows 10 Pro environment is accessible to the network.
 ```
 
-</br>**How to print the current directory**
-```
-pwd
-```
-
-</br>**How to display all the users and their path**
-```
-cat /etc/passw
-```
-
-</br>**How to list down all directories in the current directory**
-```
-ls
-```
-
-# Cheat Sheet - Setting Laboratory References
+# Reference - Setting Laboratory References
 
 </br>**How to expand/increase Ubuntu VM hard disk on VMware Player 6** 
 1. Shutdown Ubuntu OS on the VMware.
@@ -269,7 +261,7 @@ apt-get install gparted
 
 
 </br>**How to - set keyboard shorcut to display all running process in Ubuntu**</br>
-1. Go to 'Setiings'
+1. Go to 'Settings'
 2. Select 'Keyboad Shorcut'
 3. Scroll down to 'Custom Shortcut'
 4. Click the '+'
