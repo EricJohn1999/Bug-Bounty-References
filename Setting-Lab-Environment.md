@@ -1,4 +1,113 @@
-# Others 
+# Linux Command
+**16. How to unzip file**
+
+ ```
+ unzip filename.zip
+ ```
+
+**15. How to convert dos file to linux**
+
+ ```
+ sudo apt-get install dos2unix
+ ```
+
+**14. Set Golang PATH**
+```
+Open terminal
+vi ~/.bashrc
+Shift + G 
+
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
+```
+
+**13. Update Snap-Store**
+
+option 1:
+```
+sudo snap remove snap-store
+sudo snap install snap-store
+```
+option 2:
+```
+sudo killall snap && sudo snap refresh
+```
+**12. Unistall Firefox**
+```
+sudo snap remove firefox
+```
+or
+```
+sudo apt-get purge firefox
+```
+
+**11. Unistall ThunderBird**
+```
+sudo snap remove ThunderBird
+```
+or
+```
+sudo apt-get purge ThunderBird
+```
+
+**10. Update Ubuntu**
+```
+sudo apt update && sudo apt upgrade
+```
+**9. Install Git**
+```
+sudo apt update
+sudo apt upgrade -y
+sudo apt install git
+git --version
+```
+**8. Install Python environment and activate**
+
+option 1:
+```
+python3 -m venv PyEnv
+sudo apt install python3.10-venv
+```
+option 2:
+```
+source PyEnv/bin/activate
+```
+**7. Make a desktop hortcut**
+```
+ln -s $PWD ~/Desktop/
+```
+**6. Install Python**
+```
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt install python3.9
+python3.9 --version
+```
+**5. Install python virtualenv**
+```
+pip3 install virtualenv
+```
+**4. Remove virtualenv**
+```
+sudo apt-get remove virtualenv  
+sudo apt-get remove --auto-remove virtualenv
+```
+**3. Copy Github repository**
+```
+git clone https://github.com/s0md3v/Arjun.git
+```
+**2. Install python requirements**
+```
+pip3 install -r requirements.txt
+```
+**1. Remove duplicate and sort data inside the text file**
+```
+sort input_file | uniq > output_file
+```
+
+# Cheat Sheet Others 
 1. [Foxy Proxy issue on Firefox with Burp Suite](https://portswigger.net/burp/documentation/desktop/external-browser-config/certificate/ca-cert-firefox)
 2. Running Burp Suite for the first time command 
 ```
@@ -31,18 +140,13 @@ go version
 
 
 </br>**How do I fix "$'\r': command not found" errors running Bash scripts in WSL?**
-1. Install <kbd></kbd>
+1. Install 
 ```
 sudo apt-get install dos2unix
 ```
 then
 ```
 dos2unix your_file.sh
-```
-
-</br>**How to unzip file in Ubuntu Linux**
-```
-unzip filename.zip
 ```
 
 </br>**How to show Java version in Linux**
@@ -143,12 +247,6 @@ cat /etc/passw
 ls
 ```
 
-# Cheat Sheet - Metasploit Cheat Sheet
-* Metasploitable login credentials</br>
-```
-Username: msfadmin
-Password: msfadmin
-```
 # Cheat Sheet - Setting Laboratory References
 
 </br>**How to expand/increase Ubuntu VM hard disk on VMware Player 6** 
