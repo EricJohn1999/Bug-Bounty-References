@@ -1,4 +1,4 @@
-# NMAP Cheat Sheet 
+# Reference - NMAP
 
 </br>:pushpin: **NMAP brute forces DNS hostnames guessing subdomains</br>**
 ```
