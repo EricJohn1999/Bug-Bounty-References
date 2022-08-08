@@ -1,4 +1,9 @@
 # Reference - Linux Command
+**27. How to sort text from files in Linux**
+```
+sort 1.txt | uniq -u | anew results_Sort.txt
+```
+
 **26. How do I fix "$'\r': command not found" errors running Bash scripts in WSL?**
 
 Install 
