@@ -2,17 +2,17 @@
 
 **> Subject: Path Traversal via File Upload**
 
-* 1. Capture the file upload request
-* 2. In the filename parameter, change filename to "../../filename" and forward the request.
-* 3. See, if the file is getting stored outside the expected directory, if 'yes', it is an issue.
-* 4. Now, attempt to overwrite a system file and check if it is possible to overwrite the system file.
+1. Capture the file upload request
+2. In the filename parameter, change filename to "../../filename" and forward the request.
+3. See, if the file is getting stored outside the expected directory, if 'yes', it is an issue.
+4. Now, attempt to overwrite a system file and check if it is possible to overwrite the system file.
 
 </br>
 
 **> Subject: File Upload XSS in image uploading of App**
-* 1. Go to App settings and select a html file with .jpg extension.
-* 2. Capture upload request using Burp and change the file extension from .jpg to .html, additionaly change the content type to text/html and it will upload the file.
-* 3. Open the link of upload image in new file and XSS will pop up.
+1. Go to App settings and select a html file with .jpg extension.
+2. Capture upload request using Burp and change the file extension from .jpg to .html, additionaly change the content type to text/html and it will upload the file.
+3. Open the link of upload image in new file and XSS will pop up.
 
 ```
 POST /inventory/app_icon/upload/ HTTP/1.0
@@ -36,22 +36,23 @@ Content-Type: text/html
 HTML content
 -----------------------------1714461176134095862036612614--
 ```
-
+</br>
 
 # Methodolgy: LFI
 
 **> Subject: Transversal by User Agent**
-* 1. Directory Transversal look for <kbd>GET /cgi-bin/status</kbd> 
-* 2. Set the User-Agent to
+1. Directory Transversal look for <kbd>GET /cgi-bin/status</kbd> 
+2. Set the User-Agent to
 ```
 User-Agent: {:;}; echo $(</etc/passwd)
 ```
 
+</br>
 
 # Methodolgy: IDOR
 
 **> Subject: IDOR in the password change functionality**
-* 1. Try to change password and capture raw request with Burp Suite
+1. Try to change password and capture raw request with Burp Suite
 
 ```
 POST /api/change_password HTTP/1.1
@@ -64,6 +65,6 @@ Accept: application/json
     "password":"{password}"
 }
 ```
-* 2. Input any valid user account and input any password
+2. Input any valid user account and input any password
 
 
